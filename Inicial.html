@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Bem-Vindo(a)</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+    <video autoplay="true" loop muted>
+        <source src="./videos/video space.mp4" type="video/mp4">
+    </video>
+
+<center>
+    <div class="conteudo">
+        <img src="./Imagens/Logo Sword.png" >
+        <div class="formulario">
+      
+        <input id="id_usuario" placeholder="L  O  G  I  N">
+       
+        <input id="id_senha" type="password" placeholder="S  E  N  H  A" >
+      </div>
+      <a href="">
+      <button onclick="entrar()" class="botao">COMEÇAR</button></a>
+    </div>
+</center>
+</header>
+    
+</body>
+</html>
+<script>
+
+function entrar(){
+    var usuario = id_usuario.value;
+    var senha = id_senha.value;
+      if (usuario == "admin" && senha =="12345678" ) {
+        window.location.href = "Dashboard.html";
+    
+      } else {
+      alert("Usuário ou Senha Inválidos")
+     }
+    
+    }
+
+</script>

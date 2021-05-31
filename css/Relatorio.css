@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&family=Odibee+Sans&family=Orbitron:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marvel', sans-serif;
+    overflow-y:hidden;
+}
+html, body {
+    height: 100%;
+    background-color: black;
+
+}
+
+header {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header a{
+    font-size: 30px;
+    display: flex;
+   flex:0.5;
+   color: white;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    
+}
+
+.fundo{
+display: block;
+   position: relative;
+    margin: 30px;
+   order: 1;
+   color: #039be5;
+    
+}
+.header{
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: #039be5;
+    text-decoration: none;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-top:2px solid  #039be5;
+    border-bottom:2px solid  #039be5;
+    
+ }
+
+ .mostrar_relatorio{
+     padding-top: 20px;
+     padding-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: block;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 800px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #039be5;
+   
+    
+
+
+}
+
+
+
+.mostrar_relatorio input{
+ height: 500px;
+ width: 70%;
+ font-size: 13px;
+ padding-left: 10px;
+ border: none;
+ border-bottom:2px solid  #039be5;
+ background-color: rgba(0, 0, 0, 0.5);
+ font: black;
+ outline: 0;
+ color: white;
+ font-size: large;
+ border-radius: 10px;
+ border-bottom-left-radius: 0px;
+ border-bottom-right-radius: 0px;
+ 
+}
+
+.mostrar_relatorio button{
+    display: block;
+    align-items: center;
+    margin-left: 1450px;
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+    /* border-radius: 10px; */
+    border-top:2px solid  #039be5;
+    border-bottom:2px solid  #039be5;
+    font-size: 20px;
+    font-style: bold;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-right-width: 0;
+    border-left-width: 0;
+
+  
+    border-color: #039be5;
+}

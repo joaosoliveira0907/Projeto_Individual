@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/Formulario.css">
+</head>
+<video autoplay="true" loop muted>
+  <source src="./videos/video space.mp4" type="video/mp4">
+</video>
+<body>
+  <div class="fundo">
+  <div class="header">
+          <a href="Dashboard.html">Início</a> <br>
+          <a href="Missoes.html">Missões</a> <br>
+          <a href="Formulario.html">Cadastre  Sua Equipe</a><br>
+          <a href="Relatorio.html">Envio de Relatório</a>
+  </div> 
+
+    <div class="mostrar_formulario">
+    <h1 style="color:  #039be5; font-size: 40px;">Insira os Dados dos Integrantes da Sua Equipe</h1>
+        <br> <br>
+          <div id="cad" class="div_cad">
+            Nome:<br>
+            <input id="id_nome" ><br><br>
+            Data de Nascimento:<br>
+            <input id="id_data_de_nasc"  type="date"><br><br>
+            CPF:<br>
+            <input maxlength="18" id="id_cpf" placeholder="XXX.XXX.XXX-XX"><br><br>
+            Gênero:<br>
+           <select id="id_genero" class="genero">
+              <option value="">Selecione o Gênero</option>
+               <option value="masc"> Masculino</option>
+               <option value="fem">Feminino</option>
+               <option value="neu">Neutro</option>
+           </select><br> <br>
+            País:<br>
+            <input id="id_pais" ><br><br>
+            Cidade:<br>
+            <input id="id_cidade"><br><br>
+            E-mail:<br>
+            <input id="id_email"><br><br>
+            <br> <center><button onclick="cadastrar()" class="btn_entra">Cadastrar</button></center>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+
+function cadastrar() {
+  var nome = id_nome.value;
+  var email = id_email.value;
+  var cpf = id_cpf.value;
+  var pais = id_pais.value;
+  var cidade = id_cidade.value;
+  var data = id_data_de_nasc.value;
+ 
+  var lista_membros = ["João Pedro", "Frizza", "Caio", "Fernando Brandão", "Marise", "Thiago", "Célia"];
+  
+  pesquisar();
+
+  if (nome.length <3 ) {
+    alert("Nome Inválido")
+  } 
+  else if (email.indexOf("@") == -1 || email.indexOf(".com") == -1 ) {
+
+    alert("email inválido")
+
+  } 
+  else if (cpf.length < 12) {
+
+    alert("CPF inválido")
+
+  } else if(data.indexOf("/") == -1){
+    alert("Data de Nascimento Inválida")
+
+  } else if(id_genero.value == ""){
+      alert("Escolha um Gênero")
+  }else{
+    alert("Cadastrado com Sucesso")
+    document.getElementById('id_nome').value="";
+    document.getElementById('id_email').value="";
+    document.getElementById('id_cpf').value="";
+    document.getElementById('id_data_de_nasc').value="";
+
+  } 
+
+  
+}
+
+var lista_membros = ["João Pedro", "Frizza", "Caio", "Fernando Brandão", "Marise", "Thiago", "Célia"];
+
+function pesquisar() {
+    var nome = id_nome.value;
+
+    for(var contador = 0; contador < lista_membros.length; contador++) {
+    if(lista_membros[contador].toUpperCase() == nome.toUpperCase()) {
+         var nome_existe_na_lista = true;
+    }
+}
+    if(nome_existe_na_lista) {
+    alert(`O Membro ${nome} Já Existe na Equipe`)
+}
+
+}
+
+</script>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/Dashboard.css">
+    <!-- Link da Biblioteca para usar o Carroussel de Imagens -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+    <video autoplay="true" loop muted>
+        <source src="./videos/video space.mp4" type="video/mp4">
+    </video>
+<body>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <div class="fundo">
+        
+        <!-- Começo do Header -->
+        
+        <div class="header">
+          <a href="Dashboard.html">Início</a> <br>
+          <a href="Missoes.html">Missões</a> <br>
+          <a href="Formulario.html">Cadastre  Sua Equipe</a><br>
+          <a href="Relatorio.html">Envio de Relatório</a>
+        </div>
+   
+        <!-- Fim do Header -->
+
+    <div class="perfil" > 
+    
+         <img class="joao" src="./Imagens/João.png">
+         <div class="texto_agente">
+            Agente: João Pedro Santos <br> 
+            Data De Nascimento: 09/07/2001 <br> 
+            CPF: 490.849.988.80 <br> 
+            Gênero: Masculino <br> 
+            Cidade: São Paulo <br> 
+            Pais: Brasil <br> 
+            Equipe: 005 <br> 
+            Missão: 06 <br> 
+            Status: Em Andamento 
+
+         </div>
+       
+       
+    </div>
+
+    <div class="status1">
+      <center>
+      <h3>Progresso da Missão: <span style="color: white;">70%</span> </h3> <br> <br>
+     </center>
+      <div class="container">
+        <div class="progress-bar"></div>
+    </div>
+ 
+    </div>
+
+    <div class="status2">
+        
+        <div class="carousel">
+            <a class="prev"><</a>
+        <a class="carousel-item" href="#one!"><img src="./Imagens/Frizza.png"></a>
+        <a class="carousel-item" href="#two!"><img src="./Imagens/Caio.png"></a>
+        <a class="carousel-item" href="#three!"><img src="./Imagens/Celia.png"></a>
+        <a class="carousel-item" href="#four!"><img src="./Imagens/Marise.png"></a>
+        <a class="carousel-item" href="#five!"><img src="./Imagens/Thiago.png"></a>
+        <a class="carousel-item" href="#six!"><img src="./Imagens/Brandão.png"></a>
+      </div>
+      
+      <a class="next">></a>
+    </div>
+
+   
+</body>
+</html>
+<!-- Jquery  -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+      $('.carousel').carousel();
+
+      $(".next").click(function(){
+        $('.carousel').carousel('next');
+  
+      });
+
+      $(".prev").click(function(){
+        $('.carousel').carousel('prev');
+      });
+    });
+
+</script>
+
+
+    

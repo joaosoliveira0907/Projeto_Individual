@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="./css/Relatorio.css">
+</head>
+<video autoplay="true" loop muted>
+    <source src="./videos/video space.mp4" type="video/mp4">
+  </video>
+<body>
+    <div class="fundo">
+        <div class="header">
+            <a href="Dashboard.html">Início</a> <br>
+            <a href="Missoes.html">Missões</a> <br>
+            <a href="Formulario.html">Cadastre  Sua Equipe</a><br>
+            <a href="Relatorio.html">Envio de Relatório</a>
+        </div>
+
+        <div class="mostrar_relatorio">
+            <p><h1 style="font-size: 40px;">
+                Espaço Reservado Para o Envio do Relatório da Missão
+            </h1></p> <br> <br> 
+            <span style="color: white; font-size: 25px;"> Escreva como está indo a missão:</span> <br> <br>  
+            <input type="text" id="in_rel_missao">
+            <button onclick="enviar_relatorio()">Enviar Relatório</button>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
+
+<script>
+    function enviar_relatorio(){
+        rel_missao = in_rel_missao.value;
+
+        if(rel_missao == ""){
+            alert("Por Favor! Preencha o Fomulário")
+        }else {
+        alert("Relatório Enviado com Sucesso!")
+        document.getElementById("in_rel_missao").value="";
+    }
+    }
+        
+ 
+</script>
